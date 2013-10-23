@@ -3,7 +3,8 @@
 
 Vagrant.configure("2") do |config|
   config.vm.box = "roguerails-box"
-  config.vm.box_url = "http://goo.gl/f27geQ"
+  # Commenting this out since we don't want to download it over the net at the workshop
+  # config.vm.box_url = "http://goo.gl/f27geQ"
 
   config.vm.network :forwarded_port, guest: 3000, host: 3000
   config.vm.network :forwarded_port, guest: 3306, host: 3305
