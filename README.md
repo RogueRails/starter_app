@@ -36,3 +36,5 @@ rails s
 ```
 
 From here you should be able to access the application at http://localhost:3000/
+
+You will need to run any other Rails dependent commands (such as `rake db:migrate`) within `vagrant ssh`. However, run `git` commands outside of this (on your local system).
